@@ -1,6 +1,6 @@
 # Spec — Publicar en GitHub Pages (sebastiansiordia20.github.io)
 
-> Estado: borrador
+> Estado: implementada
 > Fecha: 2026-08-09
 
 ## 1. Contexto
@@ -32,25 +32,25 @@ Que el proyecto genere una build estática (`out/`) y que al subirlo a GitHub qu
 ## 3. Requisitos
 
 ### Funcionales
-- [ ] F1. `next.config.ts` → `output: "export"` (static export).
-- [ ] F2. `/work/[slug]` prerenderizable: agregar `generateStaticParams` con los 3 slugs existentes.
-- [ ] F3. `.nojekyll` en `public/` para que GitHub Pages no ignore `_next`.
-- [ ] F4. Workflow `.github/workflows/pages.yml`: checkout → setup-node → `npm ci` → `npm run build` → `upload-pages-artifact` (path `out`) → `deploy-pages`. Disparador: push a `master`.
-- [ ] F5. Git local del repo: `user.email = 2122100652@soy.utj.edu.mx` (solo este repo).
-- [ ] F6. Commit local de todos los cambios pendientes (config de despliegue + trabajo previo).
+- [x] F1. `next.config.ts` → `output: "export"` (static export).
+- [x] F2. `/work/[slug]` prerenderizable: agregar `generateStaticParams` con los 3 slugs existentes.
+- [x] F3. `.nojekyll` en `public/` para que GitHub Pages no ignore `_next`.
+- [x] F4. Workflow `.github/workflows/pages.yml`: checkout → setup-node → `npm ci` → `npm run build` → `upload-pages-artifact` (path `out`) → `deploy-pages`. Disparador: push a `master`.
+- [x] F5. Git local del repo: `user.email = 2122100652@soy.utj.edu.mx` (solo este repo).
+- [x] F6. Commit local de todos los cambios pendientes (config de despliegue + trabajo previo).
 
 ### No funcionales
-- [ ] N1. Sin cambios de layout, contenido ni i18n (solo color).
-- [ ] N2. `npm run lint` y `npm run build` (con export) pasan localmente.
-- [ ] N3. No requiere `gh` ni credenciales extra (la creación del repo la hace el usuario en la web).
+- [x] N1. Sin cambios de layout, contenido ni i18n (solo color).
+- [x] N2. `npm run lint` y `npm run build` (con export) pasan localmente.
+- [x] N3. No requiere `gh` ni credenciales extra (la creación del repo la hace el usuario en la web).
 
 ## 4. Criterios de aceptación
 
-- [ ] CA0. Paleta migrada: sin dorado en CSS ni componentes (solo azul marino/blanco/gris/azules).
-- [ ] CA1. `npm run build` produce la carpeta `out/` con `index.html` y las 3 rutas `/work/*.html`.
-- [ ] CA2. `npm run lint` pasa.
-- [ ] CA3. Los archivos de despliegue (`next.config.ts`, `.github/workflows/pages.yml`, `public/.nojekyll`, `generateStaticParams`) están en el repo y commiteados con el correo institucional.
-- [ ] CA4. El usuario tiene instrucciones claras de 4 pasos para publicar (crear repo → push → Pages → ver sitio).
+- [x] CA0. Paleta migrada: sin dorado en CSS ni componentes (solo azul marino/blanco/gris/azules).
+- [x] CA1. `npm run build` produce la carpeta `out/` con `index.html` y las 3 rutas `/work/*.html`.
+- [x] CA2. `npm run lint` pasa.
+- [x] CA3. Los archivos de despliegue (`next.config.ts`, `.github/workflows/pages.yml`, `public/.nojekyll`, `generateStaticParams`) están en el repo y commiteados con el correo institucional.
+- [x] CA4. El usuario tiene instrucciones claras de 4 pasos para publicar (crear repo → push → Pages → ver sitio).
 
 ## 5. Enfoque técnico
 
