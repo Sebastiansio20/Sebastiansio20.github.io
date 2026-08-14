@@ -47,7 +47,7 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="flex items-center transition-opacity hover:opacity-70"
+            className="flex items-center rounded-lg bg-white p-2 shadow-[0_4px_20px_rgba(0,0,0,0.35)] transition-opacity hover:opacity-85"
             aria-label="AGBA Consulting — home"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
