@@ -49,15 +49,15 @@ export default function CustomCursor() {
       aria-hidden="true"
     >
       <motion.div
-        className="absolute left-0 top-0 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent"
+        className="absolute left-0 top-0 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent"
         style={{ x, y }}
       />
       <motion.div
         className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/50"
         style={{ x: ringX, y: ringY }}
         animate={{
-          width: interactive ? 72 : 44,
-          height: interactive ? 72 : 44,
+          width: interactive ? 88 : 56,
+          height: interactive ? 88 : 56,
         }}
         transition={{ duration: 0.3, ease: "easeOut" }}
       />
