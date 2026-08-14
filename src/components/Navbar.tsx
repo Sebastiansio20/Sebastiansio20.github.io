@@ -37,7 +37,7 @@ export default function Navbar() {
         className={cn(
           "fixed inset-x-0 top-0 z-50 border-b transition-all duration-500",
           scrolled
-            ? "border-line bg-white/70 backdrop-blur-md"
+            ? "border-line bg-white/70 backdrop-blur-lg"
             : "border-transparent bg-transparent",
         )}
       >
@@ -54,7 +54,7 @@ export default function Navbar() {
             <img
               src="/logo-transparent.png"
               alt="AGBA Consulting"
-              className="h-[100px] w-auto"
+              className="h-[100px] w-auto opacity-100"
             />
           </Link>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
                   className={cn(
                     "group relative text-[13px] transition-colors duration-300",
                     scrolled
-                      ? "text-[#55637a] hover:text-[#0a1628]"
+                      ? "text-[#3f4b61] hover:text-[#0a1628]"
                       : "text-muted hover:text-foreground",
                   )}
                 >
@@ -101,7 +101,7 @@ export default function Navbar() {
                           ? "text-[#0a1628]"
                           : "text-foreground"
                         : scrolled
-                          ? "text-[#55637a] hover:text-[#0a1628]"
+                          ? "text-[#3f4b61] hover:text-[#0a1628]"
                           : "text-muted hover:text-foreground",
                     )}
                   >
