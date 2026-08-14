@@ -8,7 +8,7 @@ import { useI18n } from "@/lib/i18n";
 
 const artImage: Record<string, string> = {
   "supply-chain-intelligence": "/work/supply-chain.jpg",
-  "process-automation": "/work/automation.jpg",
+  "process-automation": "/work/automation.svg",
   "digital-transformation": "/work/transformation.jpg",
 };
 
