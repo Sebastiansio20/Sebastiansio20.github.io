@@ -47,17 +47,12 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className={cn(
-              "flex items-center rounded-lg p-2 transition-all duration-500",
-              scrolled
-                ? "bg-transparent shadow-none"
-                : "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.35)]",
-            )}
+            className="flex items-center rounded-lg p-2"
             aria-label="AGBA Consulting — home"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-transparent.png"
+              src={scrolled ? "/logo-transparent.png" : "/logo-white.png"}
               alt="AGBA Consulting"
               className="h-[100px] w-auto"
             />
