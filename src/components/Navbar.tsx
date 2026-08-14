@@ -36,8 +36,8 @@ export default function Navbar() {
       <header
         className={cn(
           "fixed inset-x-0 top-0 z-50 border-b transition-all duration-500",
-          scrolled || open
-            ? "border-line bg-background/80 backdrop-blur-md"
+          scrolled
+            ? "border-line bg-white"
             : "border-transparent bg-transparent",
         )}
       >
@@ -47,7 +47,12 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="flex items-center rounded-lg bg-white p-2 shadow-[0_4px_20px_rgba(0,0,0,0.35)] transition-opacity hover:opacity-85"
+            className={cn(
+              "flex items-center rounded-lg p-2 transition-all duration-500",
+              scrolled
+                ? "bg-transparent shadow-none"
+                : "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.35)]",
+            )}
             aria-label="AGBA Consulting — home"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -63,7 +68,12 @@ export default function Navbar() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="group relative text-[13px] text-muted transition-colors duration-300 hover:text-foreground"
+                  className={cn(
+                    "group relative text-[13px] transition-colors duration-300",
+                    scrolled
+                      ? "text-[#55637a] hover:text-[#0a1628]"
+                      : "text-muted hover:text-foreground",
+                  )}
                 >
                   {link.label}
                   <span
@@ -92,8 +102,12 @@ export default function Navbar() {
                     className={cn(
                       "uppercase transition-colors duration-300",
                       lang === item.code
-                        ? "text-foreground"
-                        : "text-muted hover:text-foreground",
+                        ? scrolled
+                          ? "text-[#0a1628]"
+                          : "text-foreground"
+                        : scrolled
+                          ? "text-[#55637a] hover:text-[#0a1628]"
+                          : "text-muted hover:text-foreground",
                     )}
                   >
                     {item.label}
@@ -104,7 +118,10 @@ export default function Navbar() {
 
             <Link
               href="/#contact"
-              className="text-[13px] text-foreground transition-colors hover:text-accent"
+              className={cn(
+                "text-[13px] transition-colors hover:text-accent",
+                scrolled ? "text-[#0a1628]" : "text-foreground",
+              )}
             >
               {t.hero.ctaPrimary}
             </Link>
@@ -119,13 +136,15 @@ export default function Navbar() {
           >
             <span
               className={cn(
-                "h-px w-6 bg-foreground transition-transform duration-300",
+                "h-px w-6 transition-transform duration-300",
+                scrolled ? "bg-[#0a1628]" : "bg-foreground",
                 open && "translate-y-[3px] rotate-45",
               )}
             />
             <span
               className={cn(
-                "h-px w-6 bg-foreground transition-transform duration-300",
+                "h-px w-6 transition-transform duration-300",
+                scrolled ? "bg-[#0a1628]" : "bg-foreground",
                 open && "-translate-y-[3px] -rotate-45",
               )}
             />
