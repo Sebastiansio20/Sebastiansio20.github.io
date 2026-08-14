@@ -42,7 +42,7 @@ export default function Navbar() {
         )}
       >
         <nav
-          className="mx-auto flex h-16 w-full max-w-[1400px] items-center justify-between px-6 md:h-[72px] md:px-10 lg:px-16"
+          className="mx-auto flex h-[116px] w-full max-w-[1400px] items-center justify-between px-6 md:px-10 lg:px-16"
           aria-label="Main"
         >
           <Link
@@ -54,7 +54,7 @@ export default function Navbar() {
             <img
               src="/logo-transparent.png"
               alt="AGBA Consulting"
-              className="h-10 w-auto"
+              className="h-[100px] w-auto"
             />
           </Link>
 
