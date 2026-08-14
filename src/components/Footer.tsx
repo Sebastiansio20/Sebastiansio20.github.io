@@ -14,9 +14,9 @@ export default function Footer() {
           <div className="md:col-span-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo.png"
+              src="/logo-transparent.png"
               alt="AGBA Consulting"
-              className="h-10 w-auto rounded-sm"
+              className="h-14 w-auto"
             />
             <p className="mt-5 text-sm text-muted">{t.footer.tagline}</p>
           </div>
