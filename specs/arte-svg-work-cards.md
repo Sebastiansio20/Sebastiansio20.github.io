@@ -1,6 +1,6 @@
 # Spec — Arte abstracto SVG en las tarjetas de Work
 
-> Estado: borrador
+> Estado: implementada
 > Fecha: 2026-08-09
 
 ## 1. Contexto
@@ -14,26 +14,26 @@ Reemplazar el placeholder de cada tarjeta de Work por una pieza de arte abstract
 ## 3. Requisitos
 
 ### Funcionales
-- [ ] F1. Cada uno de los 3 proyectos tiene su propio arte abstracto, conceptualmente ligado a su tema:
+- [x] F1. Cada uno de los 3 proyectos tiene su propio arte abstracto, conceptualmente ligado a su tema:
   - `supply-chain-intelligence` (Datos): constelación de nodos conectados (red).
   - `process-automation` (Automatización): líneas de flujo paralelas con pulsos.
   - `digital-transformation` (Transformación): malla/mesh con hilos de conexión.
-- [ ] F2. El arte usa la paleta cálida existente: dorado (`#e8b04c`), cobre (`#c8794a`), bronce (`#b5732f`) sobre fondo oscuro (`#121210`), con un glow radial sutil.
-- [ ] F3. SVG inline (sin requests externos), `aria-hidden`, responsive (`viewBox` + `preserveAspectRatio`), peso ligero.
-- [ ] F4. Los efectos hover actuales de las tarjetas (scale, glow dorado, flecha) se mantienen sobre el arte.
+- [x] F2. El arte usa la paleta azul actual (`--ocean`, `--steel`, `--ice`, `--accent`) sobre `--surface`, con glow radial sutil (la paleta dorada original fue migrada a azul marino/blanco/gris).
+- [x] F3. SVG inline (sin requests externos), `aria-hidden`, responsive (`viewBox` + `preserveAspectRatio`), peso ligero.
+- [x] F4. Los efectos hover actuales de las tarjetas (scale, glow, flecha) se mantienen sobre el arte.
 
 ### No funcionales
-- [ ] N1. `prefers-reduced-motion` → el arte es estático (no se añade animación).
-- [ ] N2. Sin dependencias nuevas, sin fotos, sin cambios de layout/contenido/i18n.
-- [ ] N3. `npm run lint` y `npm run build` pasan.
+- [x] N1. El arte es estático (no animación; respeta `prefers-reduced-motion`).
+- [x] N2. Sin dependencias nuevas, sin fotos, sin cambios de layout/contenido/i18n.
+- [x] N3. `npm run lint` y `npm run build` pasan.
 
 ## 4. Criterios de aceptación
 
-- [ ] CA1. Las 3 tarjetas de Work muestran arte abstracto distinto y on-brand (dark + dorado/cobre/bronce), no el placeholder plano.
-- [ ] CA2. El arte escala con la tarjeta y no genera peticiones externas.
-- [ ] CA3. El hover (scale + glow) sigue funcionando sobre el arte.
-- [ ] CA4. El arte es accesible (decorativo, `aria-hidden`) y no afecta el texto de la tarjeta.
-- [ ] CA5. `npm run lint` y `npm run build` pasan; `/` responde 200.
+- [x] CA1. Las 3 tarjetas de Work muestran arte abstracto distinto y on-brand (dark + azul marino), no el placeholder plano.
+- [x] CA2. El arte escala con la tarjeta y no genera peticiones externas.
+- [x] CA3. El hover (scale + glow) sigue funcionando sobre el arte.
+- [x] CA4. El arte es accesible (decorativo, `aria-hidden`) y no afecta el texto de la tarjeta.
+- [x] CA5. `npm run lint` y `npm run build` pasan; `/` responde 200.
 
 ## 5. Enfoque técnico
 
