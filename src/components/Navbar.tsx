@@ -52,7 +52,7 @@ export default function Navbar() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={scrolled ? "/logo-transparent.png" : "/logo-white.png"}
+              src="/logo-transparent.png"
               alt="AGBA Consulting"
               className="h-[100px] w-auto"
             />
