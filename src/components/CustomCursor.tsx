@@ -1,13 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring } from "motion/react";
+import { motion, useMotionValue } from "motion/react";
 
 export default function CustomCursor() {
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
-  const ringX = useSpring(x, { stiffness: 260, damping: 24 });
-  const ringY = useSpring(y, { stiffness: 260, damping: 24 });
   const [interactive, setInteractive] = useState(false);
 
   useEffect(() => {
@@ -49,18 +47,25 @@ export default function CustomCursor() {
       aria-hidden="true"
     >
       <motion.div
-        className="absolute left-0 top-0 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent"
+        className="cursor-crosshair absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2"
         style={{ x, y }}
-      />
-      <motion.div
-        className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/50"
-        style={{ x: ringX, y: ringY }}
-        animate={{
-          width: interactive ? 88 : 56,
-          height: interactive ? 88 : 56,
-        }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
-      />
+        animate={{ scale: interactive ? 1.5 : 1 }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
+      >
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          stroke="#7aa6e8"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+        >
+          <line x1="5" y1="14" x2="23" y2="14" />
+          <line x1="14" y1="5" x2="14" y2="23" />
+          <circle cx="14" cy="14" r="1.6" fill="#7aa6e8" stroke="none" />
+        </svg>
+      </motion.div>
     </div>
   );
 }

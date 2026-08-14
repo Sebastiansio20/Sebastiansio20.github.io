@@ -76,6 +76,10 @@ body.has-cursor * {
   display: none;
 }
 
+.cursor-crosshair {
+  filter: drop-shadow(0 0 6px rgba(122, 166, 232, 0.55));
+}
+
 body.has-cursor .cursor-outer {
   display: block;
 }
