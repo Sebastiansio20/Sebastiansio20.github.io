@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Transformación digital: de sistemas legacy a la nube">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="55%" stop-color="#0e1c33"/>
+      <stop offset="100%" stop-color="#143060"/>
+    </linearGradient>
+    <pattern id="dots2" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#4a7fd6" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="cloudFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8c4ee"/>
+      <stop offset="100%" stop-color="#4a7fd6"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a7fd6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a8c4ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4a7fd6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="portal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7aa6e8" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#4a7fd6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4a7fd6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a8c4ee"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  <rect width="800" height="600" fill="url(#dots2)"/>
+
+  <g font-family="Space Grotesk, Inter, system-ui, sans-serif" font-size="12">
+
+    <!-- Zone labels -->
+    <text x="70" y="60" fill="#8f9ab0" letter-spacing="2" font-size="10">LEGACY</text>
+    <text x="660" y="60" fill="#a8c4ee" letter-spacing="2" font-size="10">CLOUD · MODERN</text>
+    <text x="352" y="300" fill="#7aa6e8" letter-spacing="2" font-size="10" text-anchor="middle">TRANSFORM</text>
+
+    <!-- Legacy stack -->
+    <g>
+      <rect x="70" y="120" width="130" height="46" rx="4" fill="#dde4ef" filter="url(#shadow2)"/>
+      <g stroke="#9aa7bd" stroke-width="1.5">
+        <line x1="86" y1="134" x2="184" y2="134"/>
+        <line x1="86" y1="146" x2="166" y2="146"/>
+      </g>
+      <rect x="88" y="178" width="94" height="40" rx="4" fill="#c8d2e0" filter="url(#shadow2)"/>
+      <g stroke="#98a6bc" stroke-width="1.5">
+        <line x1="102" y1="190" x2="168" y2="190"/>
+        <line x1="102" y1="200" x2="156" y2="200"/>
+      </g>
+      <ellipse cx="135" cy="262" rx="45" ry="14" fill="#3f5c8a"/>
+      <path d="M 90 262 v 36 a 45 14 0 0 0 90 0 v -36" fill="#24395e" stroke="#3f5c8a" stroke-width="1.5"/>
+      <ellipse cx="135" cy="262" rx="45" ry="14" fill="none" stroke="#5b7bb5" stroke-width="1.5"/>
+      <rect x="70" y="330" width="130" height="48" rx="4" fill="#1b2b4a" stroke="#3f5c8a" stroke-width="1.5" filter="url(#shadow2)"/>
+      <text x="84" y="348" fill="#8f9ab0" font-size="10">on-premise</text>
+      <text x="84" y="364" fill="#55637a" font-size="9">SAP · mainframe</text>
+      <rect x="96" y="398" width="78" height="34" rx="4" fill="#16233b" stroke="#2b4a7a" stroke-width="1.2"/>
+      <text x="108" y="419" fill="#8f9ab0" font-size="10">ERP</text>
+    </g>
+
+    <!-- Transformation beam -->
+    <g>
+      <circle cx="390" cy="300" r="95" fill="url(#portal)"/>
+      <path d="M 255 300 C 300 300, 300 300, 330 300" stroke="url(#beam)" stroke-width="3" fill="none" marker-end="url(#arrow2)"/>
+      <circle cx="390" cy="300" r="46" fill="none" stroke="#a8c4ee" stroke-width="1.6" stroke-dasharray="4 6" opacity="0.9"/>
+      <circle cx="390" cy="300" r="62" fill="none" stroke="#4a7fd6" stroke-width="1" opacity="0.5"/>
+      <path d="M 390 292 l 7 8 l -7 8 l -7 -8 z" fill="#a8c4ee" opacity="0.9"/>
+    </g>
+
+    <!-- Cloud -->
+    <g filter="url(#shadow2)">
+      <circle cx="606" cy="140" r="26" fill="url(#cloudFill)"/>
+      <circle cx="640" cy="124" r="36" fill="url(#cloudFill)"/>
+      <circle cx="678" cy="140" r="24" fill="url(#cloudFill)"/>
+      <rect x="588" y="136" width="108" height="34" rx="17" fill="url(#cloudFill)"/>
+      <path d="M 590 196 v 26 M 650 196 v 26 M 690 196 v 26" stroke="#7aa6e8" stroke-width="2" opacity="0.7"/>
+    </g>
+    <text x="640" y="246" fill="#7aa6e8" font-size="10" text-anchor="middle" letter-spacing="1">CLOUD</text>
+
+    <!-- Sources feeding cloud -->
+    <g>
+      <rect x="500" y="290" width="120" height="40" rx="6" fill="#14233c" stroke="#4a7fd6" stroke-width="1.4" filter="url(#shadow2)"/>
+      <circle cx="517" cy="310" r="4" fill="#4a7fd6"/>
+      <text x="527" y="314" fill="#dde4ef" font-size="11" font-weight="600">Sources</text>
+      <rect x="500" y="344" width="120" height="40" rx="6" fill="#14233c" stroke="#4a7fd6" stroke-width="1.4" filter="url(#shadow2)"/>
+      <circle cx="517" cy="364" r="4" fill="#7aa6e8"/>
+      <text x="527" y="368" fill="#dde4ef" font-size="11" font-weight="600">Pipelines</text>
+      <path d="M 590 196 C 580 240, 590 280, 590 290" stroke="#8f9ab0" stroke-width="1.6" fill="none" marker-end="url(#arrow2)"/>
+      <path d="M 600 196 C 610 260, 560 330, 560 344" stroke="#8f9ab0" stroke-width="1.6" fill="none" marker-end="url(#arrow2)"/>
+      <path d="M 620 220 v 110" stroke="#8f9ab0" stroke-width="1.6" fill="none" marker-end="url(#arrow2)"/>
+    </g>
+
+    <!-- Dashboard -->
+    <g filter="url(#shadow2)">
+      <rect x="540" y="410" width="220" height="150" rx="10" fill="#101f36" stroke="#3f5c8a" stroke-width="1.4"/>
+      <rect x="540" y="410" width="220" height="26" rx="10" fill="#1b2b4a"/>
+      <rect x="540" y="426" width="220" height="10" fill="#1b2b4a"/>
+      <circle cx="558" cy="423" r="5" fill="#3ddc84"/>
+      <circle cx="572" cy="423" r="5" fill="#ff5d5d"/>
+      <circle cx="586" cy="423" r="5" fill="#f5a623"/>
+      <text x="690" y="427" fill="#8f9ab0" font-size="10" text-anchor="end">dashboard</text>
+      <g>
+        <rect x="556" y="452" width="54" height="38" rx="6" fill="#14233c"/>
+        <text x="565" y="466" fill="#a8c4ee" font-size="13" font-weight="700">98%</text>
+        <text x="565" y="480" fill="#55637a" font-size="8">adoption</text>
+        <rect x="616" y="452" width="54" height="38" rx="6" fill="#14233c"/>
+        <text x="625" y="466" fill="#a8c4ee" font-size="13" font-weight="700">-42%</text>
+        <text x="625" y="480" fill="#55637a" font-size="8">costs</text>
+        <rect x="676" y="452" width="70" height="38" rx="6" fill="#14233c"/>
+        <text x="685" y="466" fill="#a8c4ee" font-size="13" font-weight="700">3.1x</text>
+        <text x="685" y="480" fill="#55637a" font-size="8">velocity</text>
+      </g>
+      <g stroke-width="8" stroke-linecap="round">
+        <rect x="556" y="502" width="8" height="46" rx="4" fill="#2b4a7a" stroke="none"/>
+        <rect x="574" y="510" width="8" height="38" rx="4" fill="#3f5c8a" stroke="none"/>
+        <rect x="592" y="498" width="8" height="50" rx="4" fill="#4a7fd6" stroke="none"/>
+        <rect x="610" y="506" width="8" height="42" rx="4" fill="#5b7bb5" stroke="none"/>
+        <rect x="628" y="494" width="8" height="54" rx="4" fill="#7aa6e8" stroke="none"/>
+        <path d="M 648 548 L 656 534 L 664 540 L 672 520 L 680 528 L 690 504 L 700 518 L 708 508 L 716 512 L 728 500 L 736 508 L 748 494" stroke="#a8c4ee" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+  </g>
+</svg>
