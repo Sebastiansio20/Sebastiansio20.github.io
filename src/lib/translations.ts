@@ -24,7 +24,7 @@ export const en = {
     statement: "Technology should solve business problems,",
     statementAccent: "not create new ones.",
     body:
-      "Siordia Consulting sits at the intersection of software, data and business. We help companies turn complex processes into reliable systems, convert fragmented data into decision-making tools, and apply artificial intelligence where it actually creates value.",
+      "AGBA Consulting sits at the intersection of software, data and business. We help companies turn complex processes into reliable systems, convert fragmented data into decision-making tools, and apply artificial intelligence where it actually creates value.",
   },
   services: {
     eyebrow: "Services",
@@ -120,12 +120,12 @@ export const en = {
     ],
   },
   why: {
-    eyebrow: "Why Siordia",
+    eyebrow: "Why AGBA",
     line1: "We don't start with technology.",
     line2: "We start with the problem.",
     label: "The combination",
     body:
-      "Siordia combines business understanding, software engineering, data and artificial intelligence. We don't just build software — we design systems that solve real business problems.",
+      "AGBA combines business understanding, software engineering, data and artificial intelligence. We don't just build software — we design systems that solve real business problems.",
     disciplines: [
       "Business understanding",
       "Software engineering",
@@ -221,7 +221,7 @@ export const es: Dictionary = {
     statement: "La tecnología debe resolver problemas de negocio,",
     statementAccent: "no crear nuevos.",
     body:
-      "Siordia Consulting nace de la intersección entre software, datos y negocio. Ayudamos a las empresas a convertir procesos complejos en sistemas confiables, transformar datos fragmentados en herramientas de decisión y aplicar inteligencia artificial donde realmente genera valor.",
+      "AGBA Consulting nace de la intersección entre software, datos y negocio. Ayudamos a las empresas a convertir procesos complejos en sistemas confiables, transformar datos fragmentados en herramientas de decisión y aplicar inteligencia artificial donde realmente genera valor.",
   },
   services: {
     eyebrow: "Servicios",
@@ -317,12 +317,12 @@ export const es: Dictionary = {
     ],
   },
   why: {
-    eyebrow: "Por qué Siordia",
+    eyebrow: "Por qué AGBA",
     line1: "No empezamos con la tecnología.",
     line2: "Empezamos con el problema.",
     label: "La combinación",
     body:
-      "Siordia combina entendimiento de negocio, ingeniería de software, datos e inteligencia artificial. No solo construimos software: diseñamos sistemas que resuelven problemas reales de negocio.",
+      "AGBA combina entendimiento de negocio, ingeniería de software, datos e inteligencia artificial. No solo construimos software: diseñamos sistemas que resuelven problemas reales de negocio.",
     disciplines: [
       "Entendimiento del negocio",
       "Ingeniería de software",

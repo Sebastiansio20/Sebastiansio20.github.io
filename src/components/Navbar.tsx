@@ -47,10 +47,15 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="font-display text-sm font-semibold uppercase tracking-[0.35em] text-foreground transition-opacity hover:opacity-70"
-            aria-label="Siordia Consulting — home"
+            className="flex items-center transition-opacity hover:opacity-70"
+            aria-label="AGBA Consulting — home"
           >
-            SIORDIA
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-white.png"
+              alt="AGBA Consulting"
+              className="h-7 w-auto"
+            />
           </Link>
 
           <ul className="hidden items-center gap-9 md:flex">

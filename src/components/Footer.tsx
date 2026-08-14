@@ -12,9 +12,12 @@ export default function Footer() {
       <Container className="py-20 md:py-28">
         <div className="grid gap-16 md:grid-cols-12">
           <div className="md:col-span-6">
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.35em]">
-              SIORDIA CONSULTING
-            </p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-white.png"
+              alt="AGBA Consulting"
+              className="h-10 w-auto"
+            />
             <p className="mt-5 text-sm text-muted">{t.footer.tagline}</p>
           </div>
 
@@ -62,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 flex flex-col gap-4 border-t border-line pt-8 text-[11px] uppercase tracking-[0.25em] text-muted md:flex-row md:items-center md:justify-between">
-          <span>© 2026 Siordia Consulting</span>
+          <span>© 2026 AGBA Consulting</span>
           <span className="hidden md:block">{t.footer.tagline}</span>
           <span>{t.footer.servicesLine}</span>
         </div>

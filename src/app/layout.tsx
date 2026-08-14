@@ -22,8 +22,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Siordia Consulting — Business. Technology. Intelligence.",
-    template: "%s · Siordia Consulting",
+    default: "AGBA Consulting — Business. Technology. Intelligence.",
+    template: "%s · AGBA Consulting",
   },
   description:
     "We build intelligent systems for ambitious businesses. Strategy, data, automation and artificial intelligence for companies ready to operate smarter.",
@@ -35,17 +35,21 @@ export const metadata: Metadata = {
     "digital transformation",
     "business intelligence",
   ],
+  icons: {
+    icon: "/logo-favicon.png",
+    apple: "/logo-favicon.png",
+  },
   openGraph: {
-    title: "Siordia Consulting — Business. Technology. Intelligence.",
+    title: "AGBA Consulting — Business. Technology. Intelligence.",
     description:
       "We build intelligent systems for ambitious businesses. Strategy, data, automation and artificial intelligence.",
     type: "website",
-    siteName: "Siordia Consulting",
+    siteName: "AGBA Consulting",
     locale: "en_US",
   },
   twitter: {
     card: "summary",
-    title: "Siordia Consulting — Business. Technology. Intelligence.",
+    title: "AGBA Consulting — Business. Technology. Intelligence.",
     description:
       "We build intelligent systems for ambitious businesses.",
   },
@@ -78,7 +82,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Siordia Consulting",
+              name: "AGBA Consulting",
               slogan: "Business. Technology. Intelligence.",
               description:
                 "We build intelligent systems for ambitious businesses.",
