@@ -16,7 +16,7 @@ export default function Footer() {
             <img
               src="/logo-transparent.png"
               alt="AGBA Consulting"
-              className="h-14 w-auto"
+              className="h-[200px] w-auto"
             />
             <p className="mt-5 text-sm text-muted">{t.footer.tagline}</p>
           </div>
