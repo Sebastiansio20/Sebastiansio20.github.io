@@ -7,7 +7,7 @@ import Reveal from "@/components/ui/Reveal";
 import { useI18n } from "@/lib/i18n";
 
 const artImage: Record<string, string> = {
-  "supply-chain-intelligence": "/work/supply-chain.jpg",
+  "supply-chain-intelligence": "/work/supply-chain.svg",
   "process-automation": "/work/automation.svg",
   "digital-transformation": "/work/transformation.svg",
 };
