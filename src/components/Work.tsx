@@ -4,7 +4,14 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
+import ProjectArt, { type ProjectArtVariant } from "@/components/ProjectArt";
 import { useI18n } from "@/lib/i18n";
+
+const artVariant: Record<string, ProjectArtVariant> = {
+  "supply-chain-intelligence": "data",
+  "process-automation": "automation",
+  "digital-transformation": "transformation",
+};
 
 export default function Work() {
   const { t } = useI18n();
@@ -40,9 +47,11 @@ export default function Work() {
               >
                 <div className="relative aspect-[4/3] overflow-hidden border border-line bg-surface">
                   <div
-                    className="grid-mask absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
                     aria-hidden="true"
-                  />
+                  >
+                    <ProjectArt variant={artVariant[project.slug] ?? "data"} />
+                  </div>
                   <div
                     className="absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100"
                     style={{

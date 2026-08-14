@@ -3,7 +3,14 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
+import ProjectArt, { type ProjectArtVariant } from "@/components/ProjectArt";
 import { useI18n } from "@/lib/i18n";
+
+const artVariant: Record<string, ProjectArtVariant> = {
+  "supply-chain-intelligence": "data",
+  "process-automation": "automation",
+  "digital-transformation": "transformation",
+};
 
 export default function WorkDetailContent({ slug }: { slug: string }) {
   const { t } = useI18n();
@@ -35,7 +42,9 @@ export default function WorkDetailContent({ slug }: { slug: string }) {
         <div className="mt-20 grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <div className="relative aspect-[16/10] overflow-hidden border border-line bg-surface">
-              <div className="grid-mask absolute inset-0" aria-hidden="true" />
+              <div className="absolute inset-0" aria-hidden="true">
+                <ProjectArt variant={artVariant[slug] ?? "data"} />
+              </div>
               <div
                 className="absolute inset-0"
                 style={{
