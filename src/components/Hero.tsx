@@ -50,14 +50,7 @@ export default function Hero() {
 
       <div className="relative mx-auto flex w-full max-w-[1400px] flex-1 flex-col justify-center px-6 md:px-10 lg:px-16">
         <motion.div style={{ y: contentY, opacity: contentOpacity }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo-transparent.png"
-            alt="AGBA Consulting"
-            className="h-[200px] w-auto"
-          />
-
-          <div className="mt-6 flex items-center justify-between text-[11px] uppercase tracking-[0.3em] text-muted md:mt-10">
+          <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.3em] text-muted">
             <span>{t.hero.eyebrowLeft}</span>
             <span className="hidden md:block">{t.hero.eyebrowRight}</span>
           </div>
