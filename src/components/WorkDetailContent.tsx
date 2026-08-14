@@ -3,13 +3,12 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
-import ProjectArt, { type ProjectArtVariant } from "@/components/ProjectArt";
 import { useI18n } from "@/lib/i18n";
 
-const artVariant: Record<string, ProjectArtVariant> = {
-  "supply-chain-intelligence": "data",
-  "process-automation": "automation",
-  "digital-transformation": "transformation",
+const artImage: Record<string, string> = {
+  "supply-chain-intelligence": "/work/supply-chain.jpg",
+  "process-automation": "/work/automation.jpg",
+  "digital-transformation": "/work/transformation.jpg",
 };
 
 export default function WorkDetailContent({ slug }: { slug: string }) {
@@ -42,9 +41,12 @@ export default function WorkDetailContent({ slug }: { slug: string }) {
         <div className="mt-20 grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <div className="relative aspect-[16/10] overflow-hidden border border-line bg-surface">
-              <div className="absolute inset-0" aria-hidden="true">
-                <ProjectArt variant={artVariant[slug] ?? "data"} />
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={artImage[slug] ?? artImage["supply-chain-intelligence"]}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-80"
+              />
               <div
                 className="absolute inset-0"
                 style={{

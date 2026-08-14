@@ -4,13 +4,12 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
-import ProjectArt, { type ProjectArtVariant } from "@/components/ProjectArt";
 import { useI18n } from "@/lib/i18n";
 
-const artVariant: Record<string, ProjectArtVariant> = {
-  "supply-chain-intelligence": "data",
-  "process-automation": "automation",
-  "digital-transformation": "transformation",
+const artImage: Record<string, string> = {
+  "supply-chain-intelligence": "/work/supply-chain.jpg",
+  "process-automation": "/work/automation.jpg",
+  "digital-transformation": "/work/transformation.jpg",
 };
 
 export default function Work() {
@@ -46,12 +45,12 @@ export default function Work() {
                 aria-label={`${project.title} — ${t.work.viewCase}`}
               >
                 <div className="relative aspect-[4/3] overflow-hidden border border-line bg-surface">
-                  <div
-                    className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
-                    aria-hidden="true"
-                  >
-                    <ProjectArt variant={artVariant[project.slug] ?? "data"} />
-                  </div>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={artImage[project.slug] ?? artImage["supply-chain-intelligence"]}
+                    alt=""
+                    className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
                   <div
                     className="absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100"
                     style={{
