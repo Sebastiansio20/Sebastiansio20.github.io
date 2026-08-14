@@ -52,9 +52,9 @@ export default function Navbar() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-white.png"
+              src="/logo.png"
               alt="AGBA Consulting"
-              className="h-7 w-auto"
+              className="h-7 w-auto rounded-sm"
             />
           </Link>
 
