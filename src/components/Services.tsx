@@ -12,7 +12,7 @@ export default function Services() {
 
   return (
     <section id="services" className="border-t border-line">
-      <Container className="py-28 md:py-44">
+      <Container className="pt-28 md:pt-44 pb-16 md:pb-24">
         <div className="grid gap-10 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">
             <Reveal>
