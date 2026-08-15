@@ -7,7 +7,6 @@ export const en = {
     { label: "Contact", href: "/#contact" },
   ],
   hero: {
-    eyebrowLeft: "Boutique technology consultancy",
     eyebrowRight: "Business · Technology · Intelligence",
     line1: "WE TURN",
     line2: "CHAOS INTO",
@@ -204,7 +203,6 @@ export const es: Dictionary = {
     { label: "Contacto", href: "/#contact" },
   ],
   hero: {
-    eyebrowLeft: "Consultoría boutique de tecnología",
     eyebrowRight: "Negocio · Tecnología · Inteligencia",
     line1: "CONVERTIMOS",
     line2: "EL CAOS EN",

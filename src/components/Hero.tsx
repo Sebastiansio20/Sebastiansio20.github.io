@@ -50,8 +50,7 @@ export default function Hero() {
 
       <div className="relative mx-auto flex w-full max-w-[1400px] flex-1 flex-col justify-center px-6 md:px-10 lg:px-16">
         <motion.div style={{ y: contentY, opacity: contentOpacity }}>
-          <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.3em] text-muted">
-            <span>{t.hero.eyebrowLeft}</span>
+          <div className="flex items-center justify-end text-[11px] uppercase tracking-[0.3em] text-muted">
             <span className="hidden md:block">{t.hero.eyebrowRight}</span>
           </div>
 
