@@ -37,7 +37,7 @@ export default function Work() {
               <Link
                 href={`/work/${project.slug}`}
                 className="group block"
-                aria-label={`${project.title} — ${t.work.viewCase}`}
+                aria-label={project.title}
               >
                 <div className="relative aspect-[4/3] overflow-hidden border border-line bg-surface">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -79,16 +79,6 @@ export default function Work() {
                     aria-hidden="true"
                   >
                     →
-                  </span>
-                </div>
-
-                <div className="mt-5 flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-muted">
-                  <span
-                    className="h-px w-10 bg-accent transition-all duration-500 group-hover:w-16"
-                    aria-hidden="true"
-                  />
-                  <span className="transition-colors duration-300 group-hover:text-foreground">
-                    {t.work.viewCase}
                   </span>
                 </div>
               </Link>

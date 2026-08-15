@@ -90,7 +90,6 @@ export const en = {
   work: {
     eyebrow: "Selected work",
     heading: "Selected work",
-    viewCase: "View case",
     projects: [
       {
         slug: "supply-chain-intelligence",
@@ -285,7 +284,6 @@ export const es: Dictionary = {
   work: {
     eyebrow: "Trabajo seleccionado",
     heading: "Trabajo seleccionado",
-    viewCase: "Ver caso",
     projects: [
       {
         slug: "supply-chain-intelligence",
