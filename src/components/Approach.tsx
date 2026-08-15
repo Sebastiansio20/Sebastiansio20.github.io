@@ -10,7 +10,7 @@ export default function Approach() {
 
   return (
     <section id="approach" className="border-t border-line">
-      <Container className="py-28 md:py-44">
+      <Container className="pt-14 md:pt-24 pb-28 md:pb-44">
         <div className="grid gap-10 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">
             <Reveal>
