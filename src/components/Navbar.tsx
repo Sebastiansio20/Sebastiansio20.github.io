@@ -83,7 +83,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="flex items-center gap-6">
             <div className="flex items-center gap-1 text-[11px] font-medium tracking-[0.2em]">
               {languages.map((item, i) => (
                 <span key={item.code} className="flex items-center gap-1">
@@ -117,7 +117,7 @@ export default function Navbar() {
             <Link
               href="/#contact"
               className={cn(
-                "text-[13px] transition-colors hover:text-accent",
+                "hidden text-[13px] transition-colors hover:text-accent md:inline",
                 scrolled ? "text-[#0a1628]" : "text-foreground",
               )}
             >
