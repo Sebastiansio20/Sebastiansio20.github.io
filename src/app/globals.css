@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a1628;
-  --foreground: #f2f5fa;
-  --surface: #101f36;
-  --muted: #8f9ab0;
-  --line: rgba(255, 255, 255, 0.09);
+  --background: #f4f6fb;
+  --foreground: #0e1c38;
+  --surface: #ffffff;
+  --muted: #5d6c86;
+  --line: rgba(14, 28, 56, 0.12);
   --accent: #4a7fd6;
   --accent-bright: #7aa6e8;
   --ocean: #2b4a7a;
@@ -29,7 +29,7 @@
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #0a1628;
+  color: #f4f6fb;
 }
 
 ::-webkit-scrollbar {
@@ -55,16 +55,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a1628;
+  background: #f4f6fb;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1c2f4a;
-  border: 2px solid #0a1628;
+  background: #c5d0e2;
+  border: 2px solid #f4f6fb;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #243a5e;
+  background: #a9b8d0;
 }
 
 body.has-cursor,
@@ -86,8 +86,8 @@ body.has-cursor .cursor-outer {
 
 .grid-mask {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(14, 28, 56, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 28, 56, 0.06) 1px, transparent 1px);
   background-size: 72px 72px;
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 0%, transparent 72%);
   mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 0%, transparent 72%);
@@ -96,7 +96,7 @@ body.has-cursor .cursor-outer {
 .grid-react {
   background-image: radial-gradient(
     circle 460px at var(--glow-x, 50%) var(--glow-y, 50%),
-    rgba(74, 127, 214, 0.12),
+    rgba(74, 127, 214, 0.14),
     transparent 72%
   );
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 0%, transparent 72%);
@@ -114,7 +114,7 @@ body.has-cursor .cursor-outer {
   background: radial-gradient(
     circle,
     rgba(74, 127, 214, 0.1),
-    rgba(63, 92, 138, 0.05) 45%,
+    rgba(63, 92, 138, 0.06) 45%,
     transparent 70%
   );
   filter: blur(36px);
@@ -133,7 +133,7 @@ body.has-cursor .cursor-outer {
   left: -12vmax;
   width: 62vmax;
   height: 62vmax;
-  background: radial-gradient(circle at center, rgba(74, 127, 214, 0.32), transparent 62%);
+  background: radial-gradient(circle at center, rgba(74, 127, 214, 0.18), transparent 62%);
   animation: blob-drift-a 26s ease-in-out infinite alternate;
 }
 
@@ -142,7 +142,7 @@ body.has-cursor .cursor-outer {
   right: -16vmax;
   width: 58vmax;
   height: 58vmax;
-  background: radial-gradient(circle at center, rgba(63, 92, 138, 0.28), transparent 62%);
+  background: radial-gradient(circle at center, rgba(63, 92, 138, 0.14), transparent 62%);
   animation: blob-drift-b 31s ease-in-out infinite alternate;
 }
 
@@ -151,7 +151,7 @@ body.has-cursor .cursor-outer {
   left: -8vmax;
   width: 56vmax;
   height: 56vmax;
-  background: radial-gradient(circle at center, rgba(43, 74, 122, 0.22), transparent 62%);
+  background: radial-gradient(circle at center, rgba(43, 74, 122, 0.1), transparent 62%);
   animation: blob-drift-c 34s ease-in-out infinite alternate;
 }
 
@@ -160,7 +160,7 @@ body.has-cursor .cursor-outer {
   right: -6vmax;
   width: 54vmax;
   height: 54vmax;
-  background: radial-gradient(circle at center, rgba(122, 166, 232, 0.18), transparent 62%);
+  background: radial-gradient(circle at center, rgba(122, 166, 232, 0.14), transparent 62%);
   animation: blob-drift-d 23s ease-in-out infinite alternate;
 }
 

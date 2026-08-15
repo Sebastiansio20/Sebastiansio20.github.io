@@ -54,7 +54,7 @@ export default function Approach() {
                   {step.description}
                 </p>
                 <span
-                  className="absolute right-0 top-6 hidden font-display text-5xl text-white/[0.04] transition-colors duration-500 group-hover:text-accent/25 md:block"
+                  className="absolute right-0 top-6 hidden font-display text-5xl text-foreground/[0.05] transition-colors duration-500 group-hover:text-accent/25 md:block"
                   aria-hidden="true"
                 >
                   0{i + 1}

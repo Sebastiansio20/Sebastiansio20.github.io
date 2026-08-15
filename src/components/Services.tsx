@@ -35,7 +35,7 @@ export default function Services() {
           {t.services.items.map((service) => (
             <Reveal key={service.number}>
               <motion.article
-                className="group grid cursor-default gap-6 border-t border-line py-10 transition-colors duration-500 hover:bg-white/[0.02] md:grid-cols-12 md:items-baseline md:py-14"
+                className="group grid cursor-default gap-6 border-t border-line py-10 transition-colors duration-500 hover:bg-foreground/[0.03] md:grid-cols-12 md:items-baseline md:py-14"
                 whileHover={{ x: reduceMotion ? 0 : 8 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               >

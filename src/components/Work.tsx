@@ -46,16 +46,8 @@ export default function Work() {
                     alt=""
                     className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 ease-out group-hover:scale-105"
                   />
-                  <div
-                    className="absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100"
-                    style={{
-                      background:
-                        "radial-gradient(ellipse at center, rgba(74,127,214,0.12), transparent 65%)",
-                    }}
-                    aria-hidden="true"
-                  />
                   <span
-                    className="absolute right-5 top-4 font-display text-6xl font-semibold text-white/[0.06] transition-colors duration-500 group-hover:text-accent/30"
+                    className="absolute right-5 top-4 font-display text-6xl font-semibold text-foreground/[0.06] transition-colors duration-500 group-hover:text-accent/30"
                     aria-hidden="true"
                   >
                     {project.index}

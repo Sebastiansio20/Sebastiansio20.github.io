@@ -47,14 +47,6 @@ export default function WorkDetailContent({ slug }: { slug: string }) {
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover opacity-80"
               />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "radial-gradient(ellipse at center, rgba(74,127,214,0.1), transparent 65%)",
-                }}
-                aria-hidden="true"
-              />
             </div>
           </div>
           <div className="flex flex-col justify-between border-t border-line pt-6 md:border-t-0 md:pt-0">

@@ -31,7 +31,7 @@ export default function Technology() {
                 key={`${tech}-${i}`}
                 className="flex items-center gap-10 md:gap-16"
               >
-                <span className="whitespace-nowrap font-display text-4xl font-medium uppercase tracking-tight text-white/[0.16] transition-colors duration-300 hover:text-accent md:text-6xl">
+                <span className="whitespace-nowrap font-display text-4xl font-medium uppercase tracking-tight text-foreground/[0.12] transition-colors duration-300 hover:text-accent md:text-6xl">
                   {tech}
                 </span>
                 <span
