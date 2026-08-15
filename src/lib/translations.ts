@@ -124,10 +124,26 @@ export const en = {
     body:
       "AGBA combines business understanding, software engineering, data and artificial intelligence. We don't just build software — we design systems that solve real business problems.",
     disciplines: [
-      "Business understanding",
-      "Software engineering",
-      "Data",
-      "Artificial Intelligence",
+      {
+        label: "Business understanding",
+        description:
+          "Process mapping, cost and revenue analysis, KPI frameworks, operating model design and change management so every build is tied to a real business outcome.",
+      },
+      {
+        label: "Software engineering",
+        description:
+          "Custom web platforms, internal tools and portals, API design and integration, cloud architecture and automation pipelines — engineered with quality and security in mind.",
+      },
+      {
+        label: "Data",
+        description:
+          "Data pipelines and warehouses, dashboards and reporting, data quality and governance, plus advanced analytics to turn scattered data into decisions.",
+      },
+      {
+        label: "Artificial Intelligence",
+        description:
+          "LLM-powered assistants and RAG systems, AI agents, document intelligence, predictive models and intelligent automation applied where they create measurable value.",
+      },
     ],
   },
   technology: {
@@ -317,10 +333,26 @@ export const es: Dictionary = {
     body:
       "AGBA combina entendimiento de negocio, ingeniería de software, datos e inteligencia artificial. No solo construimos software: diseñamos sistemas que resuelven problemas reales de negocio.",
     disciplines: [
-      "Entendimiento del negocio",
-      "Ingeniería de software",
-      "Datos",
-      "Inteligencia Artificial",
+      {
+        label: "Entendimiento del negocio",
+        description:
+          "Mapeo de procesos, análisis de costos e ingresos, marcos de KPIs, diseño del modelo operativo y gestión del cambio, para que cada construcción esté atada a un resultado real de negocio.",
+      },
+      {
+        label: "Ingeniería de software",
+        description:
+          "Plataformas web a la medida, herramientas internas y portales, diseño e integración de APIs, arquitectura en la nube y pipelines de automatización — ingeniería con calidad y seguridad.",
+      },
+      {
+        label: "Datos",
+        description:
+          "Pipelines y almacenes de datos, dashboards y reportes, calidad y gobierno de datos, y analítica avanzada para convertir datos dispersos en decisiones.",
+      },
+      {
+        label: "Inteligencia Artificial",
+        description:
+          "Asistentes basados en LLMs y sistemas RAG, agentes de IA, inteligencia documental, modelos predictivos y automatización inteligente aplicados donde generan valor medible.",
+      },
     ],
   },
   technology: {
