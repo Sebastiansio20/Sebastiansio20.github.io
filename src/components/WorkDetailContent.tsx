@@ -19,7 +19,7 @@ export default function WorkDetailContent({ slug }: { slug: string }) {
   const others = t.work.projects.filter((p) => p.slug !== slug);
 
   return (
-    <main className="pt-32 md:pt-40">
+    <main className="pt-28 md:pt-32">
       <Container>
         <Link
           href="/#work"

@@ -42,23 +42,23 @@ export default function Navbar() {
         )}
       >
         <nav
-          className="mx-auto flex h-[116px] w-full max-w-[1400px] items-center justify-between px-6 md:px-10 lg:px-16"
+          className="mx-auto flex h-[72px] w-full max-w-[1400px] items-center justify-between px-6 md:px-10 lg:px-16"
           aria-label="Main"
         >
           <Link
             href="/"
-            className="flex items-center rounded-lg p-2"
+            className="flex items-center rounded-lg p-1"
             aria-label="AGBA Consulting — home"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo-transparent.png"
               alt="AGBA Consulting"
-              className="h-[100px] w-auto opacity-100"
+              className="h-[44px] w-auto opacity-100"
             />
           </Link>
 
-          <ul className="hidden items-center gap-9 md:flex">
+          <ul className="hidden items-center gap-7 md:flex">
             {t.nav.map((link) => (
               <li key={link.label}>
                 <a

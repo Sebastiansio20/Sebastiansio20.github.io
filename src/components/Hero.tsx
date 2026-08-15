@@ -37,7 +37,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative flex min-h-svh flex-col overflow-hidden pt-32 md:pt-40"
+      className="relative flex min-h-svh flex-col overflow-hidden pt-24 md:pt-28"
     >
       <div
         className="pointer-events-none absolute inset-0"
