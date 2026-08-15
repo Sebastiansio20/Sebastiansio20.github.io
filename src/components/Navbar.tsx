@@ -43,7 +43,7 @@ export default function Navbar() {
           className={cn(
             "mx-auto flex w-full items-center justify-between transition-all duration-500",
             scrolled
-              ? "h-[72px] max-w-[980px] rounded-2xl border border-line bg-white/45 px-5 backdrop-blur-xl shadow-lg shadow-[#0e1c38]/5 md:px-8"
+              ? "h-[72px] max-w-[880px] rounded-2xl border border-line bg-white/45 px-5 backdrop-blur-xl shadow-lg shadow-[#0e1c38]/5 md:px-8"
               : "h-[72px] max-w-[1400px] border border-transparent bg-transparent px-6 md:px-10 lg:px-16",
           )}
           aria-label="Main"
