@@ -90,7 +90,6 @@ export const en = {
   work: {
     eyebrow: "Selected work",
     heading: "Selected work",
-    subtext: "A look at the kind of systems we build. Case details to follow.",
     viewCase: "View case",
     projects: [
       {
@@ -286,7 +285,6 @@ export const es: Dictionary = {
   work: {
     eyebrow: "Trabajo seleccionado",
     heading: "Trabajo seleccionado",
-    subtext: "Una mirada al tipo de sistemas que construimos. Detalles de los casos próximamente.",
     viewCase: "Ver caso",
     projects: [
       {

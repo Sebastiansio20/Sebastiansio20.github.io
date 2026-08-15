@@ -18,8 +18,8 @@ export default function Work() {
   return (
     <section id="work" className="border-t border-line">
       <Container className="py-28 md:py-44">
-        <div className="grid gap-10 md:grid-cols-12 md:items-end">
-          <div className="md:col-span-8">
+        <div className="grid gap-10">
+          <div>
             <Reveal>
               <Eyebrow index="( 04 )">{t.work.eyebrow}</Eyebrow>
             </Reveal>
@@ -27,11 +27,6 @@ export default function Work() {
               <h2 className="mt-10 font-display text-[clamp(2.6rem,7vw,6rem)] font-semibold uppercase leading-[0.95] tracking-[-0.02em] text-foreground">
                 {t.work.heading}
               </h2>
-            </Reveal>
-          </div>
-          <div className="md:col-span-4">
-            <Reveal delay={0.1}>
-              <p className="text-muted md:text-right">{t.work.subtext}</p>
             </Reveal>
           </div>
         </div>
