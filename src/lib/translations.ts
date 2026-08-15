@@ -136,8 +136,8 @@ export const en = {
   },
   cta: {
     eyebrow: "Ready when you are",
-    line1: "HAVE A PROBLEM",
-    line2: "WORTH SOLVING?",
+    line1: "WHAT PROCESS",
+    line2: "CAN WE HELP YOU IMPROVE?",
     body:
       "Tell us what you're trying to improve. We'll figure out what's possible.",
     button: "Start a conversation",
@@ -330,8 +330,8 @@ export const es: Dictionary = {
   },
   cta: {
     eyebrow: "Cuando estés listo",
-    line1: "¿TIENES UN PROBLEMA",
-    line2: "QUE VALE LA PENA RESOLVER?",
+    line1: "¿EN QUÉ PROCESO",
+    line2: "PODEMOS AYUDARTE A MEJORAR?",
     body: "Cuéntanos qué quieres mejorar. Nosotros descubriremos qué es posible.",
     button: "Inicia una conversación",
   },
