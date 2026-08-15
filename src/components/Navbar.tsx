@@ -41,10 +41,10 @@ export default function Navbar() {
       >
         <nav
           className={cn(
-            "mx-auto flex w-full max-w-[1400px] items-center justify-between transition-all duration-500",
+            "mx-auto flex w-full items-center justify-between transition-all duration-500",
             scrolled
-              ? "h-[72px] rounded-full border border-line bg-white/60 px-5 shadow-lg shadow-[#0e1c38]/5 backdrop-blur-xl md:px-8"
-              : "h-[72px] border border-transparent bg-transparent px-6 md:px-10 lg:px-16",
+              ? "h-[72px] max-w-[980px] rounded-2xl border border-line bg-white/45 px-5 backdrop-blur-xl shadow-lg shadow-[#0e1c38]/5 md:px-8"
+              : "h-[72px] max-w-[1400px] border border-transparent bg-transparent px-6 md:px-10 lg:px-16",
           )}
           aria-label="Main"
         >
