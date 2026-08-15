@@ -35,14 +35,17 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-50 border-b transition-all duration-500",
-          scrolled
-            ? "border-line bg-white/40 backdrop-blur-xl"
-            : "border-transparent bg-transparent",
+          "fixed inset-x-0 top-0 z-50 transition-all duration-500",
+          scrolled ? "px-4 pt-4" : "",
         )}
       >
         <nav
-          className="mx-auto flex h-[72px] w-full max-w-[1400px] items-center justify-between px-6 md:px-10 lg:px-16"
+          className={cn(
+            "mx-auto flex w-full max-w-[1400px] items-center justify-between transition-all duration-500",
+            scrolled
+              ? "h-[72px] rounded-full border border-line bg-white/60 px-5 shadow-lg shadow-[#0e1c38]/5 backdrop-blur-xl md:px-8"
+              : "h-[72px] border border-transparent bg-transparent px-6 md:px-10 lg:px-16",
+          )}
           aria-label="Main"
         >
           <Link
