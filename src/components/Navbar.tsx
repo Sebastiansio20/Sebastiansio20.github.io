@@ -57,7 +57,7 @@ export default function Navbar() {
             <img
               src="/logo-transparent.png"
               alt="AGBA Consulting"
-              className="h-[44px] w-auto opacity-100"
+              className="h-[56px] w-auto opacity-100"
             />
           </Link>
 
