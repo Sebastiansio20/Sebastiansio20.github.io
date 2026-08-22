@@ -10,4 +10,4 @@ export const technologies: string[] = [
   "Cloud",
 ];
 
-export const PLACEHOLDER_EMAIL = "hello@agba.consulting";
+export const PLACEHOLDER_EMAIL = "contacto@agbaconsulting.tech";
