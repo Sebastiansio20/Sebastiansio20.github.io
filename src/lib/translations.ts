@@ -187,7 +187,7 @@ export const en = {
     submit: "Let's talk",
     successTitle: "Thank you. We'll be in touch.",
     errorBody: "Something went wrong sending the message. Please email us directly.",
-    successBody: "Your message has been received. We usually respond within 48 hours.",
+    successBody: "Your message has been received. One of our advisors will contact you shortly.",
   },
   footer: {
     tagline: "Business. Technology. Intelligence.",
@@ -395,7 +395,7 @@ export const es: Dictionary = {
     submit: "Hablemos",
     successTitle: "Gracias. Estaremos en contacto.",
     errorBody: "Hubo un problema al enviar el mensaje. Escríbenos directo al correo.",
-    successBody: "Recibimos tu mensaje. Por lo general respondemos en 48 horas.",
+    successBody: "Recibimos tu mensaje. Uno de nuestros asesores se pondrá en contacto contigo muy pronto.",
   },
   footer: {
     tagline: "Negocio · Tecnología · Inteligencia",
