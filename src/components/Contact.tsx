@@ -5,7 +5,7 @@ import type { FormEvent } from "react";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
-import { PLACEHOLDER_EMAIL } from "@/lib/data";
+import { PLACEHOLDER_EMAIL, WEB3FORMS_ACCESS_KEY } from "@/lib/data";
 import { useI18n } from "@/lib/i18n";
 
 const fieldClasses =
@@ -14,14 +14,43 @@ const fieldClasses =
 export default function Contact() {
   const { t } = useI18n();
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (sending) return;
+    setSending(true);
+    setError(false);
+    const form = e.currentTarget;
     const payload = Object.fromEntries(
-      new FormData(e.currentTarget).entries(),
+      new FormData(form).entries(),
     );
-    console.info("Contact form payload", payload);
-    setSubmitted(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: "Nuevo mensaje desde agbaconsulting.tech",
+          from_name: "Sitio web AGBA",
+          ...payload,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   const budgets = t.contact.budgets;
@@ -168,9 +197,10 @@ export default function Contact() {
                   <div className="md:col-span-2">
                     <button
                       type="submit"
-                      className="group inline-flex items-center gap-3 rounded-full bg-accent px-7 py-3.5 text-sm font-medium text-background transition-colors duration-300 hover:bg-accent-bright"
+                      disabled={sending}
+                      className="group inline-flex items-center gap-3 rounded-full bg-accent px-7 py-3.5 text-sm font-medium text-background transition-colors duration-300 hover:bg-accent-bright disabled:opacity-60"
                     >
-                      {t.contact.submit}
+                      {sending ? "..." : t.contact.submit}
                       <span
                         className="transition-transform duration-300 group-hover:translate-x-1"
                         aria-hidden="true"
@@ -178,6 +208,11 @@ export default function Contact() {
                         →
                       </span>
                     </button>
+                    {error && (
+                      <p className="mt-4 text-sm text-red-500">
+                        {t.contact.errorBody}
+                      </p>
+                    )}
                   </div>
                 </form>
               )}
